@@ -1,0 +1,107 @@
+/*
+CSS Module for Intro component
+*/
+.intro {
+  background-color: var(--navy-850);
+}
+
+/*image and title container*/
+.imgTitleCont {
+  position: relative;
+  z-index: 1;
+  padding: 0 2rem;
+}
+
+/*image*/
+.imgIntro {
+  width: 300px;
+  height: 250px;
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+/*title*/
+.introTitle {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  margin-top: 1rem;
+}
+
+.imgIntro,
+.introTitle {
+  position: relative;
+  z-index: 1; /*image and title appear in the foreground*/
+}
+
+/*background image*/
+.introBgImg {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+/*background image - desktop*/
+.bgDesktop {
+  display: none;
+}
+
+/*description and button container*/
+.descBtnCont {
+  background-color: var(--navy-900);
+  padding: 1rem 2rem;
+}
+
+/*description*/
+.introDescription {
+  line-height: 1.5rem;
+}
+
+/*button*/
+.introButton {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    position: relative;
+    height: 100vh;
+  }
+
+  /*image*/
+  .imgIntro {
+    width: 500px;
+    height: 450px;
+  }
+
+  /*background image - mobile*/
+  .bgMobile {
+    display: none;
+  }
+
+  /*background image - desktop*/
+  .bgDesktop {
+    display: unset;
+    bottom: 0;
+  }
+
+  /*title*/
+  .introTitle {
+    font-size: 2.5rem;
+    max-width: 50rem;
+    line-height: 3rem;
+  }
+
+  /*description and button container*/
+  .descBtnCont {
+    position: relative;
+    z-index: 1; /*description and button appear in the foreground*/
+    background-color: transparent;
+    margin-top: 2rem;
+  }
+
+  /*description*/
+  .introDescription {
+    max-width: 30rem;
+  }
+}

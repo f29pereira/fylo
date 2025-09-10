@@ -37,22 +37,36 @@ ul > li > a {
   font-family: var(--font-raleway);
 }
 
+h1,
+p {
+  color: var(--white);
+}
+
 ul {
   list-style: none;
 }
 
 a {
+  color: var(--white);
   text-decoration: none;
 }
 
-h1,
-a {
-  color: var(--white);
+/*Center text*/
+.text-center {
+  text-align: center;
 }
 
 /*Centered flex row container*/
 .flex-center {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Centered flex column container*/
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

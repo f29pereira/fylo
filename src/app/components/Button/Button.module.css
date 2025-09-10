@@ -1,0 +1,16 @@
+/*
+CSS Module for Button component
+*/
+.btn {
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--cyan-500);
+  width: 17rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--teal-200);
+}

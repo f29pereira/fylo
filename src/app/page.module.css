@@ -1,0 +1,7 @@
+/*
+CSS Module for Home component
+*/
+
+.homeBg {
+  background-color: var(--navy-900);
+}
