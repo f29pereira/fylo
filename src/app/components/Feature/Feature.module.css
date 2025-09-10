@@ -1,0 +1,34 @@
+/*
+CSS Module for Feature component
+*/
+
+/*Feature container*/
+.featureCont {
+  padding: 2rem;
+}
+
+/*Feature Image Icon*/
+.featureImg {
+  width: 80px;
+  height: 70px;
+  margin-bottom: 2rem;
+}
+
+/*Feature title*/
+.featureTitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/*Feature description*/
+.featureDescription {
+  margin-top: 1rem;
+  max-width: 25rem;
+}
+
+@media (min-width: 1000px) {
+  /*Feature container*/
+  .featureCont {
+    padding: 0;
+  }
+}

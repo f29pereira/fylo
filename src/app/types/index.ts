@@ -17,3 +17,25 @@ export type ButtonProps = {
   //Button description (text / link)
   description: ReactNode;
 };
+
+/**
+ * Props for the Feature component
+ */
+export type FeatureProps = {
+  //Feature icon source
+  iconSrc: string;
+  //Feature icon alternative text
+  iconAlt: string;
+  //Feature title
+  title: string;
+  //Feature description
+  description: string;
+};
+
+/**
+ * Props for the FeaturesGrid component
+ */
+export type FeaturesGridProps = {
+  //List of Feature components
+  featuresList: FeatureProps[];
+};

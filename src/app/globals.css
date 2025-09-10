@@ -38,6 +38,7 @@ ul > li > a {
 }
 
 h1,
+h2,
 p {
   color: var(--white);
 }
@@ -49,6 +50,10 @@ ul {
 a {
   color: var(--white);
   text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 /*Center text*/
