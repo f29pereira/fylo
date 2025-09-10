@@ -9,6 +9,10 @@ Global CSS Styles
 }
 
 :root {
+  /*Fonts*/
+  --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
   /*Primary*/
   --navy-850: hsl(217, 28%, 15%); /*intro and email sign up background*/
   --navy-900: hsl(218, 28%, 13%); /*main background*/
@@ -22,4 +26,33 @@ Global CSS Styles
 
   /*Neutral*/
   --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: var(--font-open-sans);
+}
+
+h1,
+ul > li > a {
+  font-family: var(--font-raleway);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+a {
+  color: var(--white);
+}
+
+/*Centered flex row container*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,0 +1,26 @@
+/*
+CSS Module for Nav component
+*/
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: var(--navy-850);
+}
+
+.navLogo {
+  margin-right: auto;
+  width: 85px;
+  height: 30px;
+}
+
+.navItems {
+  gap: 1rem;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.navItems li:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
+}
