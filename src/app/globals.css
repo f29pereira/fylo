@@ -76,3 +76,9 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+/*flex column container*/
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

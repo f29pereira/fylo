@@ -1,0 +1,84 @@
+/*
+CSS Module for Footer component
+*/
+
+/*footer container*/
+.footer {
+  padding: 12rem 2rem 2rem 2rem;
+  background-color: var(--navy-950);
+}
+
+/*footer logo*/
+.footerLogo {
+  margin-bottom: 3rem;
+}
+
+/*contacts container*/
+.contactsCont {
+  margin-bottom: 4rem;
+}
+
+/*location description*/
+.location {
+  width: 15.6rem;
+}
+
+/*content container*/
+.contentCont {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/*gap between icons and content*/
+.iconGap {
+  gap: 1rem;
+}
+
+/*footer icons*/
+.footerIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/*links container*/
+.linksCont {
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+/*social icons*/
+.socialIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.socialIcon:hover path {
+  fill: var(--cyan-500);
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*footer container*/
+  .footer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  /*footer container*/
+  .footerCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*location description*/
+  .location {
+    width: 20.6rem;
+  }
+
+  /*phone and email container*/
+  .phoneEmailCont {
+    display: flex;
+    flex-direction: column;
+  }
+}

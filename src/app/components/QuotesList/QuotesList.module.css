@@ -5,7 +5,7 @@ CSS Module for QuotesList component
 /*main container*/
 .quotesListCont {
   position: relative;
-  padding: 0 2rem;
+  padding: 0 2rem 22rem 2rem;
   margin-top: 8rem;
 }
 
