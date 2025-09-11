@@ -39,7 +39,8 @@ ul > li > a {
 
 h1,
 h2,
-p {
+p,
+span {
   color: var(--white);
 }
 

@@ -59,3 +59,25 @@ export type UnderLineLinkProps = {
   //link description
   linkDescription: string;
 };
+
+/**
+ * Props for the Quote component
+ */
+export type QuoteProps = {
+  //quote
+  quote: string;
+  //user image source
+  userImgSrc: string;
+  //user name
+  userName: string;
+  //user role
+  userRole: string;
+};
+
+/**
+ * Props for the QuoteList component
+ */
+export type QuotesListProps = {
+  //List of Quote components
+  quotesList: QuoteProps[];
+};

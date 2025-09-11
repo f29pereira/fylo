@@ -4,8 +4,11 @@ import Intro from "./components/Intro/Intro";
 import FeaturesGrid from "./components/FeaturesGrid/FeaturesGrid";
 import type { FeatureProps } from "./types";
 import About from "./components/About/About";
+import QuotesList from "./components/QuotesList/QuotesList";
+import { QuoteProps } from "./types";
 
 export default function Home() {
+  //List of Feature components
   const featuresList: FeatureProps[] = [
     {
       iconSrc: "/images/icons/icon-access-anywhere.svg",
@@ -37,6 +40,31 @@ export default function Home() {
     },
   ];
 
+  //List of Quote components
+  const quotesList: QuoteProps[] = [
+    {
+      quote:
+        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+      userImgSrc: "/images/quotes/profile-1.jpg",
+      userName: "Satish Patel",
+      userRole: "Founder & CEO, Huddle",
+    },
+    {
+      quote:
+        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+      userImgSrc: "/images/quotes/profile-2.jpg",
+      userName: "Bruce McKenzie",
+      userRole: "Founder & CEO, Huddle",
+    },
+    {
+      quote:
+        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
+      userImgSrc: "/images/quotes/profile-3.jpg",
+      userName: "Iva Boyd",
+      userRole: "Founder & CEO, Huddle",
+    },
+  ];
+
   return (
     <main className={styles.homeBg}>
       <Intro
@@ -61,6 +89,7 @@ export default function Home() {
           </>
         }
       />
+      <QuotesList quotesList={quotesList} />
     </main>
   );
 }
