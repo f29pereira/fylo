@@ -9,7 +9,7 @@ import styles from "./FeaturesGrid.module.css";
  */
 export default function FeaturesGrid({ featuresList }: FeaturesGridProps) {
   return (
-    <div className={styles.featuresCont}>
+    <section className={styles.featuresCont}>
       <div className={styles.featuresGrid}>
         {featuresList.map((feature: FeatureProps, index) => (
           <Feature
@@ -21,6 +21,6 @@ export default function FeaturesGrid({ featuresList }: FeaturesGridProps) {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

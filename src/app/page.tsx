@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Intro from "./components/Intro/Intro";
 import FeaturesGrid from "./components/FeaturesGrid/FeaturesGrid";
 import type { FeatureProps } from "./types";
+import About from "./components/About/About";
 
 export default function Home() {
   const featuresList: FeatureProps[] = [
@@ -35,6 +36,7 @@ export default function Home() {
         "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
     },
   ];
+
   return (
     <main className={styles.homeBg}>
       <Intro
@@ -44,6 +46,21 @@ export default function Home() {
             family, and co-workers."
       />
       <FeaturesGrid featuresList={featuresList} />
+      <About
+        title="Stay productive, wherever you are"
+        content={
+          <>
+            <p className="mb-rem">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p className="mb-rem">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required.
+            </p>
+          </>
+        }
+      />
     </main>
   );
 }

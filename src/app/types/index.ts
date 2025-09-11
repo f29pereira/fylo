@@ -39,3 +39,23 @@ export type FeaturesGridProps = {
   //List of Feature components
   featuresList: FeatureProps[];
 };
+
+/**
+ * Props for the About component
+ */
+export type AboutProps = {
+  //About title
+  title: string;
+  //About content elements
+  content: ReactNode;
+};
+
+/**
+ * Props for the UnderLineLink component
+ */
+export type UnderLineLinkProps = {
+  //link href
+  linkHref: string;
+  //link description
+  linkDescription: string;
+};
