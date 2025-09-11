@@ -9,22 +9,24 @@ import Quote from "../Quote/Quote";
  */
 export default function QuotesList({ quotesList }: QuotesListProps) {
   return (
-    <section className={styles.quotesListCont}>
-      <img
-        className={styles.quoteIcon}
-        src="/images/quotes/bg-quotes.png"
-        alt=""
-      />
-      <div className={styles.quotesCont}>
-        {quotesList.map((quote: QuoteProps, index) => (
-          <Quote
-            key={index}
-            quote={quote.quote}
-            userImgSrc={quote.userImgSrc}
-            userName={quote.userName}
-            userRole={quote.userRole}
-          />
-        ))}
+    <section>
+      <div className={styles.quotesListCont}>
+        <img
+          className={styles.quoteIcon}
+          src="/images/quotes/bg-quotes.png"
+          alt=""
+        />
+        <div className={styles.quotesCont}>
+          {quotesList.map((quote: QuoteProps, index) => (
+            <Quote
+              key={index}
+              quote={quote.quote}
+              userImgSrc={quote.userImgSrc}
+              userName={quote.userName}
+              userRole={quote.userRole}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

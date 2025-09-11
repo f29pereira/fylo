@@ -40,7 +40,8 @@ ul > li > a {
 h1,
 h2,
 p,
-span {
+span,
+button {
   color: var(--white);
 }
 

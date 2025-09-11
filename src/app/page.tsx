@@ -6,6 +6,7 @@ import type { FeatureProps } from "./types";
 import About from "./components/About/About";
 import QuotesList from "./components/QuotesList/QuotesList";
 import { QuoteProps } from "./types";
+import EarlyAccess from "./components/EarlyAccess/EarlyAccess";
 
 export default function Home() {
   //List of Feature components
@@ -90,6 +91,7 @@ export default function Home() {
         }
       />
       <QuotesList quotesList={quotesList} />
+      <EarlyAccess />
     </main>
   );
 }

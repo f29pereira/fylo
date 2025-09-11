@@ -1,0 +1,74 @@
+/*
+CSS Module for EarlyAccess
+*/
+
+/*early access container*/
+.earlyAccessCont {
+  position: absolute;
+  bottom: -150px;
+  padding: 0 2rem;
+}
+
+/*content container*/
+.contentCont {
+  border-radius: 5px;
+  background-color: var(--navy-850);
+  padding: 3rem;
+}
+
+/*title*/
+.title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/*form container*/
+.formCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*email input*/
+.emailInput {
+  border-radius: 16px;
+  border: none;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+}
+
+/*invalid email input*/
+.emailInvalid {
+  font-size: 1rem;
+  color: var(--red-500);
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*early access container*/
+  .earlyAccessCont {
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+
+  /*content container*/
+  .contentCont {
+    padding: 2rem 3rem;
+  }
+
+  /*form container*/
+  .formCont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  /*email input*/
+  .emailInput {
+    width: 60%;
+    margin: 0;
+  }
+}
