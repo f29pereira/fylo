@@ -9,7 +9,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <Image
         className={styles.footerLogo}
-        src="/images/logo.svg"
+        src="images/logo.svg"
         alt="Fylo Logo"
         width={176}
         height={52}
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className={styles.contentCont}>
             <img
               className={styles.locationIcon}
-              src="/images/icons/icon-location.svg"
+              src="images/icons/icon-location.svg"
               alt=""
             />
             <p className={styles.location}>
@@ -36,7 +36,7 @@ export default function Footer() {
             <div className={`${styles.contentCont}`}>
               <img
                 className={styles.footerIcon}
-                src="/images/icons/icon-phone.svg"
+                src="images/icons/icon-phone.svg"
                 alt=""
               />
               <p>+1-543-123-4567</p>
@@ -45,7 +45,7 @@ export default function Footer() {
             <div className={`${styles.contentCont}`}>
               <img
                 className={styles.footerIcon}
-                src="/images/icons/icon-email.svg"
+                src="images/icons/icon-email.svg"
                 alt=""
               />
               <p>example@fylo.com</p>

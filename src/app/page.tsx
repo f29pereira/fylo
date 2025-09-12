@@ -12,28 +12,28 @@ export default function Home() {
   //List of Feature components
   const featuresList: FeatureProps[] = [
     {
-      iconSrc: "/images/icons/icon-access-anywhere.svg",
+      iconSrc: "images/icons/icon-access-anywhere.svg",
       iconAlt: "Icon showing computer screen and smartphone",
       title: "Access your files, anywhere",
       description:
         "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
     },
     {
-      iconSrc: "/images/icons/icon-security.svg",
+      iconSrc: "images/icons/icon-security.svg",
       iconAlt: "Icon showing valid security badge",
       title: "Security you can trust",
       description:
         "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
     },
     {
-      iconSrc: "/images/icons/icon-collaboration.svg",
+      iconSrc: "images/icons/icon-collaboration.svg",
       iconAlt: "Icon showing file sharing between a group of people",
       title: "Real-time collaboration",
       description:
         "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
     },
     {
-      iconSrc: "/images/icons/icon-any-file.svg",
+      iconSrc: "images/icons/icon-any-file.svg",
       iconAlt: "Icon showing folder with files",
       title: "Store any type of file",
       description:
@@ -46,21 +46,21 @@ export default function Home() {
     {
       quote:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
-      userImgSrc: "/images/quotes/profile-1.jpg",
+      userImgSrc: "images/quotes/profile-1.jpg",
       userName: "Satish Patel",
       userRole: "Founder & CEO, Huddle",
     },
     {
       quote:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
-      userImgSrc: "/images/quotes/profile-2.jpg",
+      userImgSrc: "images/quotes/profile-2.jpg",
       userName: "Bruce McKenzie",
       userRole: "Founder & CEO, Huddle",
     },
     {
       quote:
         "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.",
-      userImgSrc: "/images/quotes/profile-3.jpg",
+      userImgSrc: "images/quotes/profile-3.jpg",
       userName: "Iva Boyd",
       userRole: "Founder & CEO, Huddle",
     },

@@ -18,7 +18,7 @@ export default function UnderLineLink({
 
       <img
         className={styles.arrowIcon}
-        src="/images/icons/icon-arrow.svg"
+        src="images/icons/icon-arrow.svg"
         alt=""
       />
       <div className={styles.underline}></div>

@@ -19,7 +19,7 @@ export default function Intro({ title, description }: IntroProps) {
       <div className={`flex-col-center ${styles.imgTitleCont}`}>
         {/*Intro Image*/}
         <Image
-          src="/images/illustrations/illustration-intro.png"
+          src="images/illustrations/illustration-intro.png"
           alt="Intro"
           width={720}
           height={534}
@@ -28,7 +28,7 @@ export default function Intro({ title, description }: IntroProps) {
 
         {/*Background Image Mobile*/}
         <img
-          src="/images/background/bg-curvy-mobile.svg"
+          src="images/background/bg-curvy-mobile.svg"
           alt=""
           className={`${styles.introBgImg} ${styles.bgMobile}`}
         />
@@ -54,7 +54,7 @@ export default function Intro({ title, description }: IntroProps) {
 
       {/*Background Image Desktop*/}
       <img
-        src="/images/background/bg-curvy-desktop.svg"
+        src="images/background/bg-curvy-desktop.svg"
         alt=""
         className={`${styles.introBgImg} ${styles.bgDesktop}`}
       />

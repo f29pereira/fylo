@@ -16,7 +16,7 @@ export default function About({ title, content }: AboutProps) {
   return (
     <section className={styles.aboutCont}>
       <Image
-        src="/images/illustrations/illustration-stay-productive.png"
+        src="images/illustrations/illustration-stay-productive.png"
         alt="Three people having a conversation with speech bubbles"
         width={615}
         height={465}

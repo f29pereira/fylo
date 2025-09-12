@@ -10,7 +10,7 @@ export default function Nav() {
     <nav className={styles.navCont}>
       <Image
         className={styles.navLogo}
-        src="/images/logo.svg"
+        src="images/logo.svg"
         alt="Fylo Logo"
         width={176}
         height={52}

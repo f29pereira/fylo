@@ -13,7 +13,7 @@ export default function QuotesList({ quotesList }: QuotesListProps) {
       <div className={styles.quotesListCont}>
         <img
           className={styles.quoteIcon}
-          src="/images/quotes/bg-quotes.png"
+          src="images/quotes/bg-quotes.png"
           alt=""
         />
         <div className={styles.quotesCont}>
