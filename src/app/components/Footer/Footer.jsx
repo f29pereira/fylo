@@ -16,59 +16,76 @@ export default function Footer() {
       />
 
       <div className={styles.footerCont}>
-        {/*Contacts*/}
-
-        {/*Location*/}
-        <div className={`${styles.contentCont}`}>
-          <img
-            className={styles.footerIcon}
-            src="/images/icons/icon-location.svg"
-            alt=""
-          />
-          <p className={styles.location}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            molestiae, voluptatibus beatae a provident at, deleniti minima
-          </p>
-        </div>
-
-        <div className={styles.phoneEmailCont}>
-          {/*Phone*/}
-          <div className={`${styles.contentCont}`}>
+        <div className={styles.flexCont}>
+          {/*Location*/}
+          <div className={styles.contentCont}>
             <img
-              className={styles.footerIcon}
-              src="/images/icons/icon-phone.svg"
+              className={styles.locationIcon}
+              src="/images/icons/icon-location.svg"
               alt=""
             />
-            <p>+1-543-123-4567</p>
+            <p className={styles.location}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              molestiae, voluptatibus beatae a provident at, deleniti minima
+            </p>
           </div>
-          {/*Email*/}
-          <div className={`${styles.contentCont}`}>
-            <img
-              className={styles.footerIcon}
-              src="/images/icons/icon-email.svg"
-              alt=""
-            />
-            <p>example@fylo.com</p>
+
+          {/*Phone and Email*/}
+          <div className={`${styles.phoneEmailCont}`}>
+            {/*Phone*/}
+            <div className={`${styles.contentCont}`}>
+              <img
+                className={styles.footerIcon}
+                src="/images/icons/icon-phone.svg"
+                alt=""
+              />
+              <p>+1-543-123-4567</p>
+            </div>
+            {/*Email*/}
+            <div className={`${styles.contentCont}`}>
+              <img
+                className={styles.footerIcon}
+                src="/images/icons/icon-email.svg"
+                alt=""
+              />
+              <p>example@fylo.com</p>
+            </div>
           </div>
         </div>
 
-        {/*First group of links*/}
-        <div className={`flex-col ${styles.linksCont}`}>
-          <a href="">About Us</a>
-          <a href="">Jobs</a>
-          <a href="">Press</a>
-          <a href="">Blog</a>
-        </div>
+        <div className={styles.flexCont}>
+          {/*First group of links*/}
+          <div className={`flex-col ${styles.linksCont}`}>
+            <a className={styles.links} href="">
+              About Us
+            </a>
+            <a className={styles.links} href="">
+              Jobs
+            </a>
+            <a className={styles.links} href="">
+              Press
+            </a>
+            <a className={styles.links} href="">
+              Blog
+            </a>
+          </div>
 
-        {/*Second group of links*/}
-        <div className={`flex-col ${styles.linksCont}`}>
-          <a href="">Contact Us</a>
-          <a href="">Terms</a>
-          <a href="">Privacy</a>
+          {/*Second group of links*/}
+          <div className={`flex-col ${styles.linksCont}`}>
+            <a className={styles.links} href="">
+              Contact Us
+            </a>
+            <a className={styles.links} href="">
+              Terms
+            </a>
+            <a className={styles.links} href="">
+              Privacy
+            </a>
+          </div>
         </div>
 
         {/*Socials*/}
-        <div className={`flex-center ${styles.linksCont}`}>
+        <div className={styles.linksCont}>
           {/*Facebook*/}
           <a href="">
             <svg
@@ -90,6 +107,7 @@ export default function Footer() {
           {/*X*/}
           <a href="">
             <svg
+              className={styles.socialIcon}
               width="24"
               height="24"
               viewBox="0 0 24 24"
