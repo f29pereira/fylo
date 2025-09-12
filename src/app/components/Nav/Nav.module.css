@@ -1,26 +1,48 @@
 /*
 CSS Module for Nav component
 */
-.nav {
+/*nav container*/
+.navCont {
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
   background-color: var(--navy-850);
 }
 
+/*nav fylo logo*/
 .navLogo {
   margin-right: auto;
   width: 85px;
   height: 30px;
 }
 
-.navItems {
+/*nav items container*/
+.navItemsCont {
   gap: 1rem;
   font-weight: 300;
   font-size: 1rem;
 }
 
-.navItems li:hover {
+.navItemsCont li:hover {
   text-decoration: underline;
   text-decoration-color: var(--white);
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*nav container*/
+  .navCont {
+    padding: 3rem 2.5rem;
+  }
+
+  /*nav fylo logo*/
+  .navLogo {
+    width: 120px;
+    height: 40px;
+  }
+
+  /*nav items container*/
+  .navItemsCont {
+    gap: 3rem;
+    font-size: 1.2rem;
+  }
 }

@@ -3,6 +3,7 @@ CSS Module for Intro component
 */
 .intro {
   background-color: var(--navy-850);
+  margin-bottom: 8rem;
 }
 
 /*image and title container*/
@@ -54,15 +55,16 @@ CSS Module for Intro component
 
 /*description*/
 .introDescription {
-  line-height: 1.5rem;
+  width: 325px;
 }
 
-/*button*/
+/*button container*/
 .introButton {
   margin-top: 2.5rem;
+  width: 70%;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem /*1000px*/) {
   .intro {
     position: relative;
     height: 100vh;
@@ -102,6 +104,23 @@ CSS Module for Intro component
 
   /*description*/
   .introDescription {
-    max-width: 30rem;
+    width: 50%;
+  }
+
+  /*button container*/
+  .introButton {
+    width: 50%;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*button container*/
+  .introButton {
+    width: 40%;
+  }
+
+  /*description*/
+  .introDescription {
+    width: 30%;
   }
 }

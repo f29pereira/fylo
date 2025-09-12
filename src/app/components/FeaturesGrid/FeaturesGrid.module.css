@@ -7,10 +7,9 @@ CSS Module for FeaturesGrid component
   grid-template-columns: 1fr;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 62.5rem /*1000px*/) {
   /*Features grid container*/
   .featuresCont {
-    /*padding: 0 20rem;*/
     display: flex;
     justify-content: center;
     align-items: center;

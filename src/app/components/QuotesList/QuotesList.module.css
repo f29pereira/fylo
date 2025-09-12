@@ -32,16 +32,23 @@ CSS Module for QuotesList component
     position: relative;
     z-index: 1;
     flex-direction: row;
-    gap: 4rem;
-    padding: 0 8rem;
+    gap: 2rem;
+    padding: 0 2rem;
     padding-bottom: 3rem;
   }
 
   /*quote icon*/
   .quoteIcon {
     top: -35px;
-    left: 275px;
+    left: 55px;
     width: 48px;
     height: 45px;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*quote icon*/
+  .quoteIcon {
+    left: 310px;
   }
 }

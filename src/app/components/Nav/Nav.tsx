@@ -7,7 +7,7 @@ import styles from "./Nav.module.css";
  */
 export default function Nav() {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.navCont}>
       <Image
         className={styles.navLogo}
         src="/images/logo.svg"
@@ -15,7 +15,7 @@ export default function Nav() {
         width={176}
         height={52}
       />
-      <ul className={`flex-center ${styles.navItems}`}>
+      <ul className={`flex-center ${styles.navItemsCont}`}>
         <li>
           <Link href="#">Features</Link>
         </li>

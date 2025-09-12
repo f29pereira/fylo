@@ -45,7 +45,10 @@ export default function Intro({ title, description }: IntroProps) {
 
         {/*Get started button*/}
         <div className={`flex-center ${styles.introButton}`}>
-          <Button description={<Link href="#">Get started</Link>} />
+          <Button
+            description={<Link href="#">Get started</Link>}
+            styleClass="introBtn"
+          />
         </div>
       </div>
 

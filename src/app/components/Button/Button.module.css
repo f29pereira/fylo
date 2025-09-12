@@ -14,10 +14,20 @@ CSS Module for Button component
   background-color: var(--teal-200);
 }
 
+/*Intro component - button*/
+.introBtn {
+  width: 100%;
+}
+
 @media (min-width: 62.5rem /*1000px*/) {
   /*EarlyAccess component - submit button*/
   .submitBtn {
     padding: 0.5rem 1rem;
+  }
+
+  /*Intro component - button*/
+  .introBtn {
+    width: 60%;
   }
 }
 
@@ -25,5 +35,10 @@ CSS Module for Button component
   /*EarlyAccess component - submit button*/
   .submitBtn {
     padding: 1rem 2rem;
+  }
+
+  /*Intro component - button*/
+  .introBtn {
+    width: 40%;
   }
 }

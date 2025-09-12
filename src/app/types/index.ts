@@ -16,6 +16,8 @@ export type IntroProps = {
 export type ButtonProps = {
   //Button description (text / link)
   description: ReactNode;
+  //style class
+  styleClass?: string;
 };
 
 /**
