@@ -6,6 +6,12 @@ import styles from "./Button.module.css";
  *
  * Props are defined in {@link ButtonProps}.
  */
-export default function Button({ description }: ButtonProps) {
-  return <button className={styles.btn}>{description}</button>;
+export default function Button({ description, styleClass }: ButtonProps) {
+  return (
+    <button
+      className={`${styles.btn}  ${styleClass ? styles[styleClass] : ""}`}
+    >
+      {description}
+    </button>
+  );
 }

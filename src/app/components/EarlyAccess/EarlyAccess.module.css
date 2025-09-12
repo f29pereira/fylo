@@ -13,12 +13,19 @@ CSS Module for EarlyAccess
 .contentCont {
   border-radius: 5px;
   background-color: var(--navy-850);
-  padding: 3rem;
+  padding: 1rem 2rem;
 }
 
 /*title*/
 .title {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*description*/
+.description {
+  font-weight: 300;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
@@ -34,12 +41,17 @@ CSS Module for EarlyAccess
   border-radius: 16px;
   border: none;
   padding: 1rem 1.5rem;
-  margin: 2rem 0;
 }
 
-/*invalid email input*/
+/*invalid email input container*/
+.emailInvalidCont {
+  height: 2rem;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+/*invalid email input message*/
 .emailInvalid {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--red-500);
 }
 
@@ -54,7 +66,7 @@ CSS Module for EarlyAccess
 
   /*content container*/
   .contentCont {
-    padding: 2rem 3rem;
+    padding: 3rem 2rem;
   }
 
   /*form container*/
@@ -62,13 +74,51 @@ CSS Module for EarlyAccess
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
+  }
+
+  /*description*/
+  .description {
+    font-size: 1rem;
+    max-width: 25rem;
+  }
+
+  /*email input*/
+  .emailInput {
+    position: relative;
+    width: 80%;
+  }
+
+  /*invalid email input container*/
+  .emailInvalidCont {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*title*/
+  .title {
+    font-size: 1.5rem;
+  }
+
+  /*description*/
+  .description {
+    max-width: 100%;
+    padding: 0 2rem;
   }
 
   /*email input*/
   .emailInput {
     width: 60%;
-    margin: 0;
+  }
+
+  /*invalid email input container*/
+  .emailInvalidCont {
+    left: 15%;
+    transform: unset;
   }
 }
