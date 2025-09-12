@@ -1,0 +1,59 @@
+/*
+CSS Module for About component
+*/
+
+/*about container*/
+.aboutCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 0 2rem 4rem 2rem;
+}
+
+/*image*/
+.abouImg {
+  width: 300px;
+  height: 250px;
+  margin-bottom: 2rem;
+}
+
+/*title*/
+.aboutTitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*about content container*/
+.contentCont {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*about container*/
+  .aboutCont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  /*image*/
+  .abouImg {
+    width: 500px;
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  /*title*/
+  .aboutTitle {
+    font-size: 2rem;
+    max-width: 25rem;
+  }
+
+  /*about content container*/
+  .contentCont {
+    max-width: 33rem;
+  }
+}

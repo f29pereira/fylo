@@ -1,0 +1,54 @@
+/*
+CSS Module for QuotesList component
+*/
+
+/*main container*/
+.quotesListCont {
+  position: relative;
+  padding: 0 2rem 22rem 2rem;
+  margin-top: 8rem;
+}
+
+/*quote icon*/
+.quoteIcon {
+  position: absolute;
+  top: -25px;
+  width: 35px;
+  height: 25px;
+}
+
+/*quotes container*/
+.quotesCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*list of quotes container*/
+  .quotesCont {
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0 2rem;
+    padding-bottom: 3rem;
+  }
+
+  /*quote icon*/
+  .quoteIcon {
+    top: -35px;
+    left: 55px;
+    width: 48px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*quote icon*/
+  .quoteIcon {
+    left: 310px;
+  }
+}

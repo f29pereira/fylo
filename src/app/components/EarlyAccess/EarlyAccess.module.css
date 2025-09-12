@@ -1,0 +1,124 @@
+/*
+CSS Module for EarlyAccess
+*/
+
+/*early access container*/
+.earlyAccessCont {
+  position: absolute;
+  bottom: -150px;
+  padding: 0 2rem;
+}
+
+/*content container*/
+.contentCont {
+  border-radius: 5px;
+  background-color: var(--navy-850);
+  padding: 1rem 2rem;
+}
+
+/*title*/
+.title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*description*/
+.description {
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/*form container*/
+.formCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/*email input*/
+.emailInput {
+  border-radius: 16px;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+/*invalid email input container*/
+.emailInvalidCont {
+  height: 2rem;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+/*invalid email input message*/
+.emailInvalid {
+  font-size: 0.8rem;
+  color: var(--red-500);
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*early access container*/
+  .earlyAccessCont {
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+
+  /*content container*/
+  .contentCont {
+    padding: 3rem 2rem;
+  }
+
+  /*form container*/
+  .formCont {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  /*description*/
+  .description {
+    font-size: 1rem;
+    max-width: 25rem;
+  }
+
+  /*email input*/
+  .emailInput {
+    position: relative;
+    width: 80%;
+  }
+
+  /*invalid email input container*/
+  .emailInvalidCont {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*title*/
+  .title {
+    font-size: 1.5rem;
+  }
+
+  /*description*/
+  .description {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  /*email input*/
+  .emailInput {
+    width: 60%;
+  }
+
+  /*invalid email input container*/
+  .emailInvalidCont {
+    left: 15%;
+    transform: unset;
+  }
+}

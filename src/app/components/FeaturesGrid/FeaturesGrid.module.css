@@ -1,0 +1,22 @@
+/*
+CSS Module for FeaturesGrid component
+*/
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*Features grid container*/
+  .featuresCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 10rem;
+  }
+}

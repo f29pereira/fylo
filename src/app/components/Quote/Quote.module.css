@@ -1,0 +1,67 @@
+/*
+CSS Module for Quote component
+*/
+
+/*quote container*/
+.quoteCont {
+  padding: 2rem 1rem;
+  background-color: var(--navy-800);
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 2px var(--navy-850); /*offset-x offset-y blur spread color*/
+}
+
+/*quote text*/
+.quote {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/*user image*/
+.userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/*user name*/
+.userName {
+  font-weight: 700;
+}
+
+/*user info container*/
+.userCont {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/*user name*/
+.userName {
+  font-size: 1rem;
+}
+
+/*user role*/
+.userRole {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*quote container*/
+  .quoteCont {
+    padding: 2rem;
+    width: 400px;
+  }
+
+  /*quote text*/
+  .quote {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  /*user image*/
+  .userImg {
+    width: 30px;
+    height: 30px;
+  }
+}

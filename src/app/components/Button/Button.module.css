@@ -1,0 +1,44 @@
+/*
+CSS Module for Button component
+*/
+.btn {
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  background-color: var(--cyan-500);
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--teal-200);
+}
+
+/*Intro component - button*/
+.introBtn {
+  width: 100%;
+}
+
+@media (min-width: 62.5rem /*1000px*/) {
+  /*EarlyAccess component - submit button*/
+  .submitBtn {
+    padding: 0.5rem 1rem;
+  }
+
+  /*Intro component - button*/
+  .introBtn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 75rem /*1200px*/) {
+  /*EarlyAccess component - submit button*/
+  .submitBtn {
+    padding: 1rem 2rem;
+  }
+
+  /*Intro component - button*/
+  .introBtn {
+    width: 40%;
+  }
+}
