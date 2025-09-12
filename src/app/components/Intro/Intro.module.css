@@ -3,7 +3,7 @@ CSS Module for Intro component
 */
 .intro {
   background-color: var(--navy-850);
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
 }
 
 /*image and title container*/
@@ -70,6 +70,16 @@ CSS Module for Intro component
     height: 100vh;
   }
 
+  /*image and title container*/
+  .imgTitleCont {
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    z-index: 1;
+  }
+
   /*image*/
   .imgIntro {
     width: 500px;
@@ -89,17 +99,17 @@ CSS Module for Intro component
 
   /*title*/
   .introTitle {
-    font-size: 2.5rem;
-    max-width: 50rem;
-    line-height: 3rem;
+    font-size: 1.5rem;
+    max-width: 30rem;
+    line-height: 2rem;
   }
 
   /*description and button container*/
   .descBtnCont {
-    position: relative;
+    position: absolute;
+    bottom: 85px;
     z-index: 1; /*description and button appear in the foreground*/
     background-color: transparent;
-    margin-top: 2rem;
   }
 
   /*description*/
@@ -114,13 +124,48 @@ CSS Module for Intro component
 }
 
 @media (min-width: 75rem /*1200px*/) {
+  /*image and title container*/
+  .imgTitleCont {
+    top: -80px;
+  }
+
+  /*description and button container*/
+  .descBtnCont {
+    bottom: 120px;
+  }
+
   /*button container*/
   .introButton {
-    width: 40%;
+    width: 60%;
   }
 
   /*description*/
   .introDescription {
-    width: 30%;
+    width: 45%;
+  }
+}
+
+@media (min-width: 87.5rem /*1400px*/) {
+  /*image and title container*/
+  .imgTitleCont {
+    top: -125px;
+  }
+
+  /*title*/
+  .introTitle {
+    max-width: 35rem;
+    font-size: 1.8rem;
+  }
+
+  /*description and button container*/
+  .descBtnCont {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 280px;
+  }
+
+  /*description*/
+  .introDescription {
+    width: 57%;
   }
 }

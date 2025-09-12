@@ -46,3 +46,10 @@ CSS Module for Nav component
     font-size: 1.2rem;
   }
 }
+
+@media (min-width: 87.5rem /*1400px*/) {
+  /*nav container*/
+  .navCont {
+    height: 12.5rem;
+  }
+}
