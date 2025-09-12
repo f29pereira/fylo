@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Mentor - Fylo dark theme landing page solution
 
-## Getting Started
+This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd).
 
-First, run the development server:
+## Table of contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The challenge
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Users should be able to:
 
-## Learn More
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-To learn more about Next.js, take a look at the following resources:
+### Mobile View:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Fylo Mobile View](public/images/readme/fylo_mobile.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Desktop View:
 
-## Deploy on Vercel
+![Fylo Desktop View](public/images/readme/fylo_desktop.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### First interactive element - Navigation links hover state:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![Fylo Nav links hover style](public/images/readme/nav_link_hover_state.png)
+
+### Second interactive element - "Get Started" button hover state:
+
+![Fylo Get Started button hover style](public/images/readme/get_started_btn_hover_state.png)
+
+### Third interactive element - "See how fylo works" link hover state:
+
+![Fylo See how fylo works link hover style](public/images/readme/link_hover_state.png)
+
+### Fourth interactive element - "Get Started for Free" button hover state:
+
+![Fylo Get Started for Free button hover style](public/images/readme/get_started_for_free_btn_hover_state.png)
+
+### Fifth interactive element - Footer links hover state:
+
+![Fylo Footer links hover style](public/images/readme/footer_links_hover_state.png)
+
+### Sixth interactive element - Footer social icons link hover state:
+
+![Fylo Footer social icon links hover state](public/images/readme/footer_social_links_hover_state.png)
+
+### Links
+
+- Live Site URL: [https://f29pereira.github.io/fylo/](https://f29pereira.github.io/fylo/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+
+## Author
+
+- Frontend Mentor - [@f29pereira](https://www.frontendmentor.io/profile/f29pereira)
