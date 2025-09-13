@@ -14,10 +14,24 @@ export type IntroProps = {
  * Props for the Button component
  */
 export type ButtonProps = {
-  //Button description (text / link)
-  description: ReactNode;
+  //Button type
+  type?: "button" | "submit" | "reset";
+  //Button description
+  description: string;
   //style class
   styleClass?: string;
+};
+
+/**
+ * Props for the LinkButton component
+ */
+export type LinkButtonProps = {
+  //Link description
+  description: string;
+  //style class
+  styleClass?: string;
+  //link
+  linkHref: string;
 };
 
 /**

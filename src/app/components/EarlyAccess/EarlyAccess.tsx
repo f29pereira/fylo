@@ -1,7 +1,7 @@
 "use client"; //client component
 
 import styles from "./EarlyAccess.module.css";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button";
 import { useState } from "react";
 import Form from "next/form";
 
@@ -39,21 +39,31 @@ export default function EarlyAccess() {
 
         {/*Submit Form*/}
         <Form className={styles.formCont} action={submitEmail}>
+          <label className="sr-only" htmlFor="email">
+            Email address
+          </label>
           <input
+            id="email"
             name="email"
             type="email"
             placeholder="email@example.com"
             className={styles.emailInput}
+            aria-invalid={isEmailInvalid}
+            aria-describedby="email-error"
           />
-          <div className={styles.emailInvalidCont}>
+          <div className={styles.emailInvalidCont} aria-live="assertive">
             {isEmailInvalid ? (
-              <span className={styles.emailInvalid}>
+              <span id="email-error" className={styles.emailInvalid}>
                 Please enter a valid email address
               </span>
             ) : null}
           </div>
 
-          <Button description="Get Started For Free" styleClass="submitBtn" />
+          <Button
+            type="submit"
+            description="Get Started For Free"
+            styleClass="submitBtn"
+          />
         </Form>
       </div>
     </section>

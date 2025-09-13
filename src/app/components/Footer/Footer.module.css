@@ -52,12 +52,16 @@ CSS Module for Footer component
   height: 20px;
 }
 
+/*social links navigation container*/
+.sociaLinksCont {
+  margin-bottom: 2rem;
+}
+
 /*links container*/
 .linksCont {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 /*links*/
@@ -108,8 +112,8 @@ CSS Module for Footer component
     flex-direction: column;
   }
 
-  /*links container*/
-  .linksCont {
+  /*social links navigation container*/
+  .sociaLinksCont {
     width: 6rem;
   }
 }
@@ -117,18 +121,18 @@ CSS Module for Footer component
 @media (min-width: 75rem /*1200px*/) {
   /*footer container*/
   .footer {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   /*footer container*/
   .footerCont {
-    gap: 4rem;
+    gap: 3rem;
   }
 
   /*container for location/phone/email; links; socials*/
   .flexCont {
-    gap: 8rem;
+    gap: 4rem;
   }
 
   /*location description*/
@@ -136,8 +140,8 @@ CSS Module for Footer component
     width: 20rem;
   }
 
-  /*links container*/
-  .linksCont {
+  /*social links navigation container*/
+  .sociaLinksCont {
     margin: 0;
   }
 

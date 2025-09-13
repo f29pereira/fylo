@@ -10,6 +10,7 @@ import Quote from "../Quote/Quote";
 export default function QuotesList({ quotesList }: QuotesListProps) {
   return (
     <section>
+      <h2 className="sr-only">User Quotes</h2>
       <div className={styles.quotesListCont}>
         <img
           className={styles.quoteIcon}

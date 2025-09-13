@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./Intro.module.css";
 import type { IntroProps } from "@/app/types";
-import Button from "../Button/Button";
+import LinkButton from "../Buttons/LinkButton";
 
 /**
  * Renders a component with:
@@ -45,9 +44,10 @@ export default function Intro({ title, description }: IntroProps) {
 
         {/*Get started button*/}
         <div className={`flex-center ${styles.introButton}`}>
-          <Button
-            description={<Link href="#">Get started</Link>}
+          <LinkButton
+            description="Get Started"
             styleClass="introBtn"
+            linkHref="#"
           />
         </div>
       </div>

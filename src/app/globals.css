@@ -33,6 +33,7 @@ body {
 }
 
 h1,
+h2,
 ul > li > a {
   font-family: var(--font-raleway);
 }
@@ -56,6 +57,19 @@ a {
 
 p {
   line-height: 1.5rem;
+}
+
+address {
+  font-style: normal;
+}
+
+/*Available for screen readers*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /*Center text*/

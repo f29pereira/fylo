@@ -10,6 +10,7 @@ import styles from "./FeaturesGrid.module.css";
 export default function FeaturesGrid({ featuresList }: FeaturesGridProps) {
   return (
     <section className={styles.featuresCont}>
+      <h2 className="sr-only">Fylo Features</h2>
       <div className={styles.featuresGrid}>
         {featuresList.map((feature: FeatureProps, index) => (
           <Feature
