@@ -7,7 +7,7 @@ import styles from "./Nav.module.css";
  */
 export default function Nav() {
   return (
-    <nav className={styles.navCont}>
+    <nav className={styles.navCont} aria-label="Main navigation">
       <Image
         className={styles.navLogo}
         src="/images/logo.svg"
