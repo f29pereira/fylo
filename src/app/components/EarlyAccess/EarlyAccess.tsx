@@ -1,7 +1,7 @@
 "use client"; //client component
 
 import styles from "./EarlyAccess.module.css";
-import Button from "../Button/Button";
+import Button from "../Buttons/Button";
 import { useState } from "react";
 import Form from "next/form";
 
@@ -59,7 +59,11 @@ export default function EarlyAccess() {
             ) : null}
           </div>
 
-          <Button description="Get Started For Free" styleClass="submitBtn" />
+          <Button
+            type="submit"
+            description="Get Started For Free"
+            styleClass="submitBtn"
+          />
         </Form>
       </div>
     </section>

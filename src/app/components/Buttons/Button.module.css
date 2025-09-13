@@ -1,10 +1,12 @@
 /*
-CSS Module for Button component
+CSS Module for Button/LinkButton components
 */
+
 .btn {
+  text-align: center;
   font-weight: 700;
   border: none;
-  border-radius: 16px;
+  border-radius: 40px;
   background-color: var(--cyan-500);
   padding: 1rem 2rem;
   cursor: pointer;
@@ -40,5 +42,12 @@ CSS Module for Button component
   /*Intro component - button*/
   .introBtn {
     width: 40%;
+  }
+}
+
+@media (min-width: 87.5rem /*1400px*/) {
+  /*Intro component - button*/
+  .introBtn {
+    width: 25%;
   }
 }
