@@ -127,6 +127,11 @@ CSS Module for Intro component
 }
 
 @media (min-width: 87.5rem /*1400px*/) {
+  /*intro main container*/
+  .intro {
+    height: 60rem; /*916px*/
+  }
+
   /*background image - desktop*/
   .bgDesktop {
     height: 21.875rem; /*350px*/
@@ -138,6 +143,12 @@ CSS Module for Intro component
     left: 50%;
     transform: translateX(-50%);
     top: -65px;
+  }
+
+  /*image*/
+  .imgIntro {
+    width: 43.75rem; /*700px*/
+    height: 37.5rem; /*600px*/
   }
 
   /*title*/
